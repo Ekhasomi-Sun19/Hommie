@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Homie Hopper</title>
+</head>
+<body>
+    <header>
+        <div id="logo">Homie<a id="logo-s">Hopper</a></div>
+        <span class="get_started"><a class="act" href="#">Get Started</a></span>
+        <span class="get_started"><a class="act1" href="#">Sign In</a></span>
+        <span class="get_started"><a href="#">Contact Us</a></span>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="Image/water rafting.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Image/friends.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Image/hiking.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Image/biking.jpg"  alt="">
+            </div>
+                <!--slide image ends here-->
+
+                <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+                <!--automatic navigation end here-->
+        </div>
+            
+            <!--manual navigation start here-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="adventure">
+        <h2>ARE YOU READY TO UNLOCK A WORD OF ENDLESS FRIENDSHIPS AND<br>
+            UNFORGETABLE ADVENTURE?</h2>
+    </div>
+    <div class="button-container">
+        <button class="custom-button">Hop on, Connect, And Soar</button>
+    </div>
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Stories</h1>
+            <!-- <div class="border"></div> -->
+
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="Pictures/image1.jpg" alt="">
+                        <div class="name">Full Name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Once upon a time, in a small town nestled amidst rolling hills, there lived a young boy named Alex. He was an imaginative and curious child with a heart full of dreams and a mind brimming with ideas.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="Pictures/image5.png" alt="">
+                        <div class="name">Full Name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Once upon a time, in a small town nestled amidst rolling hills, there lived a young boy named Alex. He was an imaginative and curious child with a heart full of dreams and a mind brimming with ideas.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="Pictures/image2.jpg" alt="">
+                        <div class="name">Full Name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Once upon a time, in a small town nestled amidst rolling hills, there lived a young boy named Alex. He was an imaginative and curious child with a heart full of dreams and a mind brimming with ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Highlight">
+        <h1>Highlight</h1>
+    </div>
+    <div class="card-grid">
+        <div class="card">
+          <img src="Pictures/image11.jpg" alt="Image 1">
+          <h3>Meaningful Connection</h3>
+        </div>
+        <div class="card">
+          <img src="Pictures/image12.jpg" alt="Image 2">
+          <h3>Expand Your Network</h3>
+        </div>
+        <div class="card">
+          <img src="Pictures/image13.jpg" alt="Image 3">
+          <h3>Thought-Provoking Matching</h3>
+        </div>
+        <div class="card">
+          <img src="Pictures/image14.jpg" alt="Image 4">
+          <h3>Secure Conversation</h3>
+        </div>
+      </div>
+      <div class="behind">
+        <h3>Behind the Scenes</h3>
+      </div>
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+    </script>
+    
+
+    <footer>
+
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            } else{
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+            }
+        })
+    })
+</script>
+</body>
+</html>
