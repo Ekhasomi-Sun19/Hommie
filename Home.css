@@ -306,6 +306,22 @@ body main{
     margin-top: 10px;
     color: #005D72;
   }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #C7E4DF;
+    padding: 30px;
+  }
+
+  .privacy a{
+    position: relative;
+    left: 39.5%;
+    bottom: -225.5%;
+  }
   
   @media screen and (max-width: 768px) {
     .card-grid {
