@@ -408,14 +408,14 @@ ul li a:hover{
     margin: 20px auto;
 }
 
-.heading h3{
+.heading h4{
     font-size: 50px;
     color: #005D72;
     margin-bottom: 25px;
     position: relative;
 }
 
-.heading h3::after{
+.heading h4::after{
     content: "";
     position: absolute;
     width: 100%;
