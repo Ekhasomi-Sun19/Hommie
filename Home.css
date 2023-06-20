@@ -500,7 +500,7 @@ ul li a:hover{
 .about-content .contact-us{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0df1de;
+    background-color: #005D72;
     color: #fff;
     font-size: 19px;
     text-decoration: none;
@@ -511,13 +511,13 @@ ul li a:hover{
 }
 
 .about-content .contact-us:hover{
-    background-color: #0dac9e;
+    background-color: #288ea5;
 }
 
 .team-one .team{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0df1de;
+    background-color: #005D72;
     color: #fff;
     font-size: 19px;
     text-decoration: none;
@@ -527,7 +527,7 @@ ul li a:hover{
 }
 
 .team-one .team:hover{
-    background-color: #0dac9e;
+    background-color: #288ea5;
 }
 
  
