@@ -10,10 +10,6 @@ body{
 
 }
 
-a, a:hover{
-    text-decoration: none;
-}
-
 header{
     height: 60px;
     width: 100%;
@@ -21,6 +17,25 @@ header{
     top: 0;
     z-index: 2;
     background: #005D72;
+}
+
+header ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 40px;
+}
+
+header ul{
+    float: right;
+    margin-right: 55px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:"Poppins", sans-serif;
+    padding: 7px 13px;
 }
 
 #logo{
@@ -35,7 +50,7 @@ header{
 
 #logo:hover{
     color: #ecf0f1;
-}
+}                                             
 
 #logo-s{
     color: #ecf0f1;
@@ -46,21 +61,25 @@ header{
     color: #12f5bc;
 }
 
-.get_started{
+.checkButton{
+    font-size: 30px;
+    color: white;
     float: right;
-    line-height: 60px;
+    line-height: 80px;
     margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.get_started a{
-    color: #fff;
-    text-decoration: none;
+.myCheckBox{
+    display: none;
 }
 
-.get_started a:hover{
+a:hover,a.active{
     color: #12f5bc;
     border-color: #12f5bc;
 }
+
 
 /* Picture slider banner starts here */
 
@@ -528,30 +547,55 @@ ul li a:hover{
 
 /* nav bar responsiveness start here */
 
-@media screen and (max-width: 600px) {
-    nav{
-        display: block;
-        position: relative;
-        padding: 15px 20px;
+@media screen and (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
     }
 
-    .menu{
-        margin-top: 15px;
-        display: none;
+    header ul li a{
+        font-size: 16px;
     }
 
-    .menu.active, .toggle{
-        display: block;
-    }
-
-    .toggle{
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
 }
 
+@media  screen and (max-width:858px) {
+    .checkButton{
+        display: block;
+    }
 
+    ul{
+        position:fixed;
+        width: 100%;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        opacity: 0.7;
+        height: 45%;
+    }
+
+    header ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color: white;
+    }
+
+    a:hover,a.active{
+        color: #12f5bc;
+    }
+
+    .myCheckBox:checked ~ ul{
+        left: 0;
+    }
+    
+}
 
 /* card responsiveness start here */
 

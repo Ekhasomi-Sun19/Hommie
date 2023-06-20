@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="Home.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Homie Hopper</title>
 </head>
 <body>
     <header>
+        <input type="checkbox" class="myCheckBox" id="myCheck">
+        <label for="myCheck" class="checkButton">
+            <i class="fa fa-bars"></i>
+        </label>
         <div id="logo">Homie<a id="logo-s">Hopper</a></div>
-        <span class="get_started"><a class="act" href="#">Get Started</a></span>
-        <span class="get_started"><a class="act1" href="#">Sign In</a></span>
-        <span class="get_started"><a href="contact.html">Contact Us</a></span>
+        <ul>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">Get Started</a></li>
+        </ul>
     </header>
     <div class="slider">
         <div class="slides">
@@ -156,7 +162,7 @@
                     impact. Our unwavering commitment to customer satisfaction and quality ensures 
                     that we deliver exceptional products and services that exceed expectations. 
                     </p>
-                <a href="#" class="contact-us">Contact Us</a>
+                <a href="contact.html" class="contact-us">Contact Us</a>
             </div>
             <div class="about-image">
                 <img src="Pictures/friend.PNG">
