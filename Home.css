@@ -11,12 +11,12 @@ body{
 }
 
 header{
-    height: 60px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 2;
-    background: #005D72;
+    background: #F9C87C;
 }
 
 header ul li{
@@ -31,7 +31,7 @@ header ul{
 }
 
 header ul li a{
-    color: white;
+    color: #F97432;
     text-decoration: none;
     font-size: 20px;
     font-family:"Poppins", sans-serif;
@@ -45,7 +45,7 @@ header ul li a{
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
-    color: #12f5bc;
+    color: #FF7000;
 }
 
 #logo:hover{
@@ -58,7 +58,7 @@ header ul li a{
 }
 
 #logo:hover #logo-s{
-    color: #12f5bc;
+    color: #FF7000;
 }
 
 .checkButton{
@@ -76,10 +76,13 @@ header ul li a{
 }
 
 a:hover,a.active{
-    color: #12f5bc;
+    color: #FF7000;
     border-color: #12f5bc;
 }
 
+header ul li a:hover{
+    color: white;
+}
 
 /* Picture slider banner starts here */
 
@@ -127,7 +130,7 @@ body main{
 }
 
 .manual-btn{
-    border: 2px solid #12f5bc;
+    border: 2px solid #F9C87C;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -139,7 +142,7 @@ body main{
 }
 
 .manual-btn:hover{
-    background: #005D72;
+    background: #FF7000;
 }
 
 #radio1:checked ~ .first{
@@ -170,7 +173,7 @@ body main{
 }
 
 .navigation-auto div{
-    border: 2px solid #12f5bc;
+    border: 2px solid #F9C87C;
     padding: 5px;
     border-radius: 10px;
     transition: 15s;
@@ -181,19 +184,19 @@ body main{
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #12f5bc;
+    background: #FF7000;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #12f5bc;
+    background: #FF7000;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #12f5bc;
+    background: #FF7000;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #12f5bc;
+    background: #FF7000;
 }
 
 .adventure{
@@ -201,7 +204,7 @@ body main{
     text-align: center;
     margin-top: 20px;
     font-size: 12px;
-    color: #005D72;
+    color: #FF7000;
 }
 
 .button-container {
@@ -212,7 +215,7 @@ body main{
 }
 
 .custom-button {
-  background-color: #12f5bc;
+  background-color: #F9C87C;
   color: #fff;
   padding: 10px 20px;
   font-size: 19px;
@@ -222,17 +225,24 @@ body main{
 }
 
 .custom-button:hover {
-  background-color: #005D72;
+  background-color: #FFAC4A;
 }
 
 /* Card css design starts here */
 
 .testimonials{
     padding: 40px 0;
-    background: linear-gradient(to bottom, #12f5bc 1%, #FFFFFF 70%);
-    /* background: #04B696; */
-    color: #005D72;
+    background: linear-gradient(to bottom, #F9C87C 1%, #fdf6ea 70%);
+    color: #FF7000;
     text-align: center;
+}
+
+.testimonials .name{
+    color: black;
+}
+
+.col p{
+    color: black;
 }
 
 .inner{
@@ -241,13 +251,6 @@ body main{
     overflow: hidden;
     padding: 0 20px;
 }
-
-/* .border{
-    width: 160px;
-    height: 5px;
-    background: #6ab04c;
-    margin: 26px auto;
-} */
 
 .row{
     display: flex;
@@ -281,14 +284,14 @@ body main{
 }
 
 .stars{
-    color: #6ab04c;
+    color: #FF7000;
     margin-bottom: 20px;
 }
 
 .Highlight{
     padding: 40px 0;
     background: white;
-    color: #005D72;
+    color: #FF7000;
     text-align: center;
 }
 
@@ -299,8 +302,7 @@ body main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1px;
-    background: linear-gradient(to bottom, #12f5bc 1%, #FFFFFF 70%);
-    /* background: #04B696; */
+    background: linear-gradient(to bottom, #F9C87C 1%, #FFFFFF 70%);
     margin-bottom: 80px;
     
   }
@@ -323,7 +325,7 @@ body main{
   
   .card h3 {
     margin-top: 10px;
-    color: #005D72;
+    color: #FF7000;
   }
 
   .grid{
@@ -342,80 +344,8 @@ body main{
     bottom: -225.5%;
   }
 
-  /* footer css design starts from here */
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: auto;
-    background-color: #212222;
-    padding: 25px 10%;
-}
 
-ul{
-    list-style: none;
-}
-
-.footer-col{
-    width: 25%;
-}
-
-.footer-col h4{
-    position: relative;
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #0df1de;
-    text-transform: capitalize;
-}
-
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    background-color: #27c0ac;
-    height: 2px;
-    width: 40px;
-}
-
-ul li:not(:last-child){
-    margin-bottom: 8px;
-}
-
-ul li a{
-    display: block;
-    font-size: 19px;
-    text-transform: capitalize;
-    color: #bdb6b6;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-ul li a:hover{
-    color: white;
-    padding-left: 2px;
-}
-
-.links a{
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    color: white;
-    background-color: rgba(5, 61, 114, 0.8);
-    margin: 0 8px 8px 0;
-    text-align: center;
-    line-height: 44px;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-.links a:hover{
-    color: #4d4f55;
-    background-color: white;
-
-}
-
-/* about us starts here  */
+  /* about us starts here  */
 
 .heading{
     width: 90%;
@@ -429,7 +359,7 @@ ul li a:hover{
 
 .heading h4{
     font-size: 50px;
-    color: #005D72;
+    color: #FF7000;
     margin-bottom: 25px;
     position: relative;
 }
@@ -441,7 +371,7 @@ ul li a:hover{
     height: 4px;
     display: block;
     margin:0 auto;
-    background-color: #0df1de;
+    background-color: #F9C87C;
 }
 
 .heading p{
@@ -500,7 +430,7 @@ ul li a:hover{
 .about-content .contact-us{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #005D72;
+    background-color: #FFAC4A;
     color: #fff;
     font-size: 19px;
     text-decoration: none;
@@ -511,13 +441,13 @@ ul li a:hover{
 }
 
 .about-content .contact-us:hover{
-    background-color: #288ea5;
+    background-color: #F9C87C;
 }
 
 .team-one .team{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #005D72;
+    background-color: #FFAC4A;
     color: #fff;
     font-size: 19px;
     text-decoration: none;
@@ -527,7 +457,80 @@ ul li a:hover{
 }
 
 .team-one .team:hover{
-    background-color: #288ea5;
+    background-color: #F9C87C;
+}
+
+/* footer css design starts from here */
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #FFE9C9;
+    padding: 25px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FF7000;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #FFAC4A;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: #FFAC4A;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: #FFAC4A;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+
 }
 
  
@@ -584,11 +587,11 @@ ul li a:hover{
 
     header ul li a{
         font-size: 20px;
-        color: white;
+        color: #FF7000;
     }
 
     a:hover,a.active{
-        color: #12f5bc;
+        color: #FF7000;
     }
 
     .myCheckBox:checked ~ ul{
@@ -660,6 +663,8 @@ ul li a:hover{
     .footer-col h4::before{
         all:unset;
     }
+    
+    
 }
 
 @media(max-width: 555px){

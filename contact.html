@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap-icons@1.8.1/font/bootstrap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <input type="checkbox" class="myCheckBox" id="myCheck">
+        <label for="myCheck" class="checkButton">
+            <i class="fa fa-bars"></i>
+        </label>
+        <div id="logo">Homie<a id="logo-s">Hopper</a></div>
+        <ul>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">Get Started</a></li>
+        </ul>
+    </header>
     <div class="hero">
         <form action="https://formspree.io/f/mnqyergj" method="POST">
             <div class="message-icon">
@@ -31,11 +44,41 @@
                 <textarea name="Message" placeholder="Message" rows="10"></textarea>
             </div>
             <input type="submit" value="Submit" class="send-btn">
-            <div class="back">
-                <a href="Home.html">Back to Home</a>
-            </div>
         </form>
     </div>
+    <footer>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">meet our teams</a></li>
+                <li><a href="#">get started</a></li>
+                <!-- <li><a href="#">talent</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>legal right</h4>
+            <ul>
+                <li><a href="#">terms & condition</a></li>
+                <li><a href="#">privacy</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Homie Hopper</h4>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
