@@ -1,0 +1,109 @@
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  #profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  #profile-image {
+    margin-right: 20px;
+  }
+  
+  #profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  #change-image-btn {
+    margin-top: 10px;
+  }
+  
+  #chatbot-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  #chatbot-form {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  #chatbot-form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  #settings-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #settings-form input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #settings-form button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #settings-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 600px) {
+    #profile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #profile-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    #profile-details {
+      text-align: center;
+    }
+  }
+  

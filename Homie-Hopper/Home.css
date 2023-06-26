@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&di');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #F9C87C;
+}
+
+header ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 40px;
+}
+
+header ul{
+    float: right;
+    margin-right: 55px;
+}
+
+header ul li a{
+    color: #F97432;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:"Poppins", sans-serif;
+    padding: 7px 13px;
+}
+
+#logo{
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF7000;
+}
+
+#logo:hover{
+    color: #ecf0f1;
+}                                             
+
+#logo-s{
+    color: #ecf0f1;
+    margin-left: 5px;
+}
+
+#logo:hover #logo-s{
+    color: #FF7000;
+}
+
+.checkButton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.myCheckBox{
+    display: none;
+}
+
+a:hover,a.active{
+    color: #FF7000;
+    border-color: #12f5bc;
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+/* Picture slider banner starts here */
+
+body main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual{
+    position: relative;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.manual-btn{
+    border: 2px solid #F9C87C;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 15s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: #FF7000;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+/* css for automatic navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #F9C87C;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 15s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #FF7000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #FF7000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #FF7000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #FF7000;
+}
+
+.adventure{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #FF7000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; 
+}
+
+.custom-button {
+  background-color: #F9C87C;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 19px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #FFAC4A;
+}
+
+/* Card css design starts here */
+
+.testimonials{
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #F9C87C 1%, #fdf6ea 70%);
+    color: #FF7000;
+    text-align: center;
+}
+
+.testimonials .name{
+    color: black;
+}
+
+.col p{
+    color: black;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial{
+    background: #fff;
+    padding: 30px;
+    /* box-shadow: -5px 5px 10px rgba(5, 5, 5, 0.9); */
+}
+
+.testimonial img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: #FF7000;
+    margin-bottom: 20px;
+}
+
+.Highlight{
+    padding: 40px 0;
+    background: white;
+    color: #FF7000;
+    text-align: center;
+}
+
+
+/* Card grid start from here */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1px;
+    background: linear-gradient(to bottom, #F9C87C 1%, #FFFFFF 70%);
+    margin-bottom: 80px;
+    
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+    height: 60%;
+    box-shadow: -5px 5px 10px rgba(5, 5, 5, 0.9);
+
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    color: #FF7000;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #C7E4DF;
+    padding: 30px;
+  }
+
+  .privacy a{
+    position: relative;
+    left: 39.5%;
+    bottom: -225.5%;
+  }
+
+
+  /* about us starts here  */
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h4{
+    font-size: 50px;
+    color: #FF7000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+    background-color: #F9C87C;
+}
+
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    width: 80%;
+    height: 50%;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img{
+    transform: scale(1.2);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    /* margin: 15%; */
+}
+
+.about-content .contact-us{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFAC4A;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    margin: 15%;
+}
+
+.about-content .contact-us:hover{
+    background-color: #F9C87C;
+}
+
+.team-one .team{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFAC4A;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.team-one .team:hover{
+    background-color: #F9C87C;
+}
+
+/* footer css design starts from here */
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #FFE9C9;
+    padding: 25px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FF7000;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #FFAC4A;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: #FFAC4A;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: #FFAC4A;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+
+}
+
+ 
+  @media screen and (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+/* nav bar responsiveness start here */
+
+@media screen and (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    header ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media  screen and (max-width:858px) {
+    .checkButton{
+        display: block;
+    }
+
+    ul{
+        position:fixed;
+        width: 100%;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        opacity: 0.7;
+        height: 45%;
+    }
+
+    header ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color: #FF7000;
+    }
+
+    a:hover,a.active{
+        color: #FF7000;
+    }
+
+    .myCheckBox:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+/* card responsiveness start here */
+
+
+@media screen and (max-width:960px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+/* About us responsiveness starts here  */
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+
+
+/* footer responsiveness design start here */
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all:unset;
+    }
+    
+    
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+

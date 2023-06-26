@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="userprofile.css">
+  <title>User Profile</title>
+</head>
+<body>
+  <header>
+    <h1>User Profile</h1>
+  </header>
+  <main>
+    <section id="profile">
+      <div id="profile-image">
+        <img src="default-avatar.png" alt="Profile Image">
+        <button id="change-image-btn">Change Image</button>
+      </div>
+      <div id="profile-details">
+        <h2>John Doe</h2>
+        <p>Email: johndoe@example.com</p>
+        <p>Location: New York, USA</p>
+      </div>
+    </section>
+    <section id="chatbot">
+      <h2>Chatbot</h2>
+      <div id="chatbot-container">
+        <!-- Chatbot messages will be displayed here -->
+      </div>
+      <form id="chatbot-form">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <section id="settings">
+      <h2>Profile Settings</h2>
+      <form id="settings-form">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" placeholder="John Doe">
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" placeholder="johndoe@example.com">
+
+        <label for="location-input">Location:</label>
+        <input type="text" id="location-input" placeholder="New York, USA">
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+  <script src="userprofile.js"></script>
+</body>
+</html>
