@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="s-wrapper flex-class">
+            <div class="content flex-class">
+                <div class="container flex-class">
+                    <p class="name">Homie Hopper</p>
+                    <input type="email" name="email" id="login-email" placeholder="Email">
+                    <input type="password" name="password" id="login-password" placeholder="Password">
+                    <button>Log in</button>
+                    <p class="divider flex-class"><span></span>OR<span></span></p>
+                    <div class="fb flex-class">
+                        <!-- <img src="Image/friends.jpg" alt="facebook icon"> -->
+                        <div class="fb-p">Log in with Facebook</div>
+                    </div>
+                    <div class="forget-password">Forgot Password?</div>
+                </div>
+                <div class="sub-container flex-class">
+                    <p>Don't have an account?<span id="signup-page-link">Sign Up</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-wrapper flex-class">
+            <div class="content flex-class">
+                <div class="container flex-class">
+                    <p class="name">Homie Hopper</p>
+                    <input type="email" name="email" id="signup-email" placeholder="Email">
+                    <input type="text" name="name" id="signup-name" placeholder="Full Name">
+                    <input type="password" name="password" id="signup-password" placeholder="Password">
+                    <button id="signup-button">Sign Up</button>
+                    <p class="divider flex-class"><span></span>OR<span></span></p>
+                    <div class="fb flex-class">
+                        <!-- <img src="Image/Image1.jpg" alt="facebook icon"> -->
+                        <div class="fb-p">Log in with Facebook</div>
+                    </div>
+                </div>
+                <div class="sub-container flex-class">
+                    <p>Have an account?<span id="login-page-link">Login In</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-auth.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
+
+
+
+
