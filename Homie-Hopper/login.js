@@ -1,3 +1,13 @@
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js'
+    
+// If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js'
+
+// Add Firebase products that you want to use
+import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js'
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js'
+
 const signUpPageLink = document.querySelector('#signup-page-link');
 const loginPageLink = document.querySelector('#login-page-link');
 const wrapper = document.querySelector('.wrapper');
@@ -18,9 +28,9 @@ const firebaseConfig = {
 };
         
 // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const auth = firebase.auth();
-
+const app = initializeApp(firebaseConfig);
+// const auth = app.auth();
+var auth = ""
 signUpPageLink.addEventListener('click',function(){
     wrapper.style.top = '-100%';
 })
@@ -30,7 +40,8 @@ loginPageLink.addEventListener('click',function(){
 })
 
 signUpButton.addEventListener('click',function(){
-    auth.createUserWithEmailAndPassword(signUpEmail.value , signUpPassword.value)
+    auth = getAuth(app);
+    createUserWithEmailAndPassword(auth, signUpEmail.value , signUpPassword.value)
     .then((userCredential)=>{
         var user = userCredential.user;
         console.log(user);
