@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="login.js"></script> -->
 </head>
 <body>
     <div class="wrapper">
@@ -14,6 +13,7 @@
             <div class="content flex-class">
                 <div class="container flex-class">
                     <p class="name">Homie Hopper</p>
+                    <div class="wraning" id="login-warning"></div>
                     <input type="email" name="email" id="login-email" placeholder="Email">
                     <input type="password" name="password" id="login-password" placeholder="Password">
                     <button>Log in</button>
@@ -34,6 +34,7 @@
             <div class="content flex-class">
                 <div class="container flex-class">
                     <p class="name">Homie Hopper</p>
+                    <div class="wraning" id="signup-warning"></div>
                     <input type="email" name="email" id="signup-email" placeholder="Email">
                     <input type="text" name="name" id="signup-name" placeholder="Full Name">
                     <input type="password" name="password" id="signup-password" placeholder="Password">
@@ -50,14 +51,14 @@
             </div>
         </section>
     </div>
-    <!-- <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-        initializeApp();
-    </script> -->
-    <script type="module">
-
-      </script>
-    
+    <section class="loged-in s-wrapper flex-class">
+        <div class="content flex-class">
+            <div class="container flex-class">
+                <button id="signout-button">Sign Out</button>
+            </div>
+        </div>
+    </section>
+    <script type="module"></script>
     <script type='module' src="login.js"></script>
 </body>
 </html>

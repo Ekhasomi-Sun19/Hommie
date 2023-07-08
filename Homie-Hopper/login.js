@@ -17,6 +17,15 @@ const signUpEmail = document.querySelector('#signup-email');
 const signUpPassword = document.querySelector('#signup-password');
 const signUpName = document.querySelector('#signup-name');
 
+const loginButton = document.querySelector('#login-button');
+const loginEmail = document.querySelector('#login-email');
+const loginPassword = document.querySelector('#signup-password');
+
+const signoutButton = document.querySelector('#signout-button')
+
+const signupWarning = document.querySelector('#signup-warning');
+const loginWarning = document.querySelector('#login-warning');
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBJDG980Lck6r83x-sGCaRnG3DZKlCoxJ0",
@@ -40,13 +49,48 @@ loginPageLink.addEventListener('click',function(){
 })
 
 signUpButton.addEventListener('click',function(){
+    signUpButton.innerText = 'Loading...'
     auth = getAuth(app);
     createUserWithEmailAndPassword(auth, signUpEmail.value , signUpPassword.value)
     .then((userCredential)=>{
-        var user = userCredential.user;
-        console.log(user);
+        signUpButton.innerText = 'Sign Up'
+        var currentUser = auth.currentUser;
+        currentUser.updateProfile({
+            displayName:signUpName.value,
+        })
     })
     .catch((e)=>{
-        console.log(e.message);
+        signUpButton.innerText= 'Sign Up'
+        signupWarning.innerText = e.message;
     })
+})
+
+loginButton.addEventListener('click',function(){
+    loginButton.innerText = 'Loading...';
+    auth = getAuth(app);
+    signInWithEmailAndPassword(auth, loginEmail.value , loginPassword.value)
+    .then((e)=>{
+        loginButton.innerText = 'Log In';
+    })
+    .catch((e)=>{
+        loginWarning.innerText = e.message;
+        loginButton.innerText = 'Log In';
+    })
+})
+
+signoutButton.addEventListener('click',function(){
+    auth.signOut();
+})
+
+auth.onAuthStateChanged((user)=>{
+    wrapper.style.top = '0';
+    loginPassword.value = '';
+    loginEmail.value = '';
+    signUpPassword.value = '';
+    signUpEmail.value = '';
+    if(user){
+        wrapper.style.display = 'none'
+    }else{
+        wrapper.style.display = 'block';
+    }
 })

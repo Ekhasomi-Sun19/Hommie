@@ -25,6 +25,7 @@ body{
     left: 0;
     right: 0;
     transition: 0.3s ease;
+    z-index: 2;
 }
 
 .s-wrapper{
@@ -139,4 +140,11 @@ button{
 
 .sub-container span:hover{
     text-decoration: underline;
+}
+
+.loged-in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
