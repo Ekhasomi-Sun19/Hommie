@@ -75,6 +75,7 @@ button{
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .divider{
@@ -147,4 +148,11 @@ button{
     top: 0;
     left: 0;
     right: 0;
+}
+
+.warning{
+    /* color: red; */
+    font-size: small;
+    margin: 5px;
+    text-align: center;
 }

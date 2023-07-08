@@ -212,6 +212,7 @@ body main{
   justify-content: center;
   align-items: center;
   height: 20vh; 
+  text-decoration: none;
 }
 
 .custom-button {
@@ -222,6 +223,7 @@ body main{
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  
 }
 
 .custom-button:hover {

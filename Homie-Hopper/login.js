@@ -26,6 +26,30 @@ const signoutButton = document.querySelector('#signout-button')
 const signupWarning = document.querySelector('#signup-warning');
 const loginWarning = document.querySelector('#login-warning');
 
+loginPassword.addEventListener('input',checkLogInButton);
+signUpPassword.addEventListener('input',checkSignUpButton);
+loginEmail.addEventListener('input',checkLogInButton);
+signUpEmail.addEventListener('input',checkSignUpButton);
+signUpName.addEventListener('input',checkSignUpButton);
+
+function checkLogInButton(){
+    if(loginPassword.value.length >= 6 && loginEmail.value!=""){
+        loginButton.style.backgroundColor = "#0095f6"
+    }else{
+        loginButton.style.backgroundColor = "#bcdffc"
+    }
+}
+
+function checkSignUpButton(){
+    if(signUpPassword.value.length >= 6 && signUpEmail.value!="" && signUpName.value!=''){
+        signUpButton.style.backgroundColor = "#0095f6"
+    }else{
+        signUpButton.style.backgroundColor = "#bcdffc"
+    }
+}
+
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBJDG980Lck6r83x-sGCaRnG3DZKlCoxJ0",
@@ -83,6 +107,8 @@ signoutButton.addEventListener('click',function(){
 })
 
 auth.onAuthStateChanged((user)=>{
+    loginWarning.innerText = '';
+    signupWarning.innerText = '';
     wrapper.style.top = '0';
     loginPassword.value = '';
     loginEmail.value = '';
